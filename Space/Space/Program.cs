@@ -10,18 +10,13 @@ namespace Space
     {
         static void Main(string[] args)
         {
-            Console.SetBufferSize(80,25);
+            Console.SetBufferSize(80, 25);
 
-            List<cPoint> HorizontalLine = new List<cPoint>();
-            HorizontalLine.Add(p);
+            cBorder border = new cBorder(80, 25);
+            border.Show();
 
-            for (int i = 0; i < 80;i++ )
-            { 
-                cPoint p1 = new cPoint(i, 0, '+');
-                p1.DrawPoint();
-            }
-            
-
+            cShip TheShip = new cShip();
+            TheShip.Show();
             
 
             Console.ReadKey();

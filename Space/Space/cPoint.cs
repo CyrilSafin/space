@@ -20,7 +20,7 @@ namespace Space
         public void DrawPoint()
         {
             Console.SetCursorPosition(x, y);
-            Console.Write(sym);
+            Console.WriteLine(sym);
         }
     }
 }

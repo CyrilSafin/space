@@ -41,7 +41,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="cBorder.cs" />
+    <Compile Include="cFigure.cs" />
+    <Compile Include="cHorizontalLine.cs" />
     <Compile Include="cPoint.cs" />
+    <Compile Include="cShip.cs" />
+    <Compile Include="cVerticalLine.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
