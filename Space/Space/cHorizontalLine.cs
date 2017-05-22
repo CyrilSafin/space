@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Space
 {
-    class cHorizontalLine :cFigure
+    class cHorizontalLine : cFigure
     {
         public cHorizontalLine(int xLeft, int xRight, int y, char sym)
         {

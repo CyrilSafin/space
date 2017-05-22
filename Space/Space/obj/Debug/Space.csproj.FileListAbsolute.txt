@@ -3,3 +3,4 @@ S:\Projects\space\Space\Space\bin\Debug\Space.exe
 S:\Projects\space\Space\Space\bin\Debug\Space.pdb
 S:\Projects\space\Space\Space\obj\Debug\Space.exe
 S:\Projects\space\Space\Space\obj\Debug\Space.pdb
+S:\Projects\space\Space\Space\obj\Debug\Space.csprojResolveAssemblyReference.cache

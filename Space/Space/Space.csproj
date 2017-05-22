@@ -47,6 +47,7 @@
     <Compile Include="cPoint.cs" />
     <Compile Include="cShip.cs" />
     <Compile Include="cVerticalLine.cs" />
+    <Compile Include="cDirection.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

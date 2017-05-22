@@ -6,29 +6,69 @@ using System.Threading.Tasks;
 
 namespace Space
 {
-    class cShip
+    class cShip:cFigure
     {
-        List<cFigure> lineShip;
-        public int coordinata=37;
+        cDirection direction;
 
-        public cShip()
+        List<cHorizontalLine> allShipLine;
+
+        public cShip(int _coordinataX, int _coordinataY, int _heigh, cDirection _direction)
         {
-            lineShip = new List<cFigure>();
+            int crdX = _coordinataX;
+            int crdY = _coordinataY;
+            int heigh = _heigh;
+            direction = _direction;
+            
+            allShipLine = new List<cHorizontalLine>();
 
-            int width=0;
+            List<cPoint> lineShip = new List<cPoint>();
+
             do
             {
-                cVerticalLine line = new cVerticalLine(coordinata, 20, 22, '*');
-                lineShip.Add(line);
-                coordinata++;
-                width++;
+                for (int i = 0; i < 3; i++)
+                {
+                    cPoint p = new cPoint(crdX, crdY, '*');
+                    lineShip.Add(p);
+                    crdX++;
+                }
+                cFigure line = new cFigure();
             }
-            while (width < 3);
+            while (heigh < 2);
+
+                //cHorizontalLine line = new cHorizontalLine(crdX, crdX+2, crdY, '*');
+                //lineShip.Add(line);
+                //crdY++;
+                //heigh--;
+            }
+    
+
+        internal void Move()
+        {
+            foreach (var line in allShipLine)
+            {
+                if (direction ==cDirection.LEFT)
+                {
+                    
+                }
+
+                else if (direction == cDirection.RIGHT)
+                { }
+            }
         }
+
+
         public void Show()
         {
-            foreach (var line in lineShip)
+            foreach (var line in allShipLine)
             { line.DrawFigure(); }
+        }
+
+        public void KeyControl(ConsoleKey Key)
+        {
+            if (Key == ConsoleKey.LeftArrow)
+                direction = cDirection.LEFT;
+            else if (Key == ConsoleKey.RightArrow)
+                direction = cDirection.RIGHT;
         }
       
     }
